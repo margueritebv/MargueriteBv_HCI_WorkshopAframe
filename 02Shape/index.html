@@ -10,12 +10,47 @@
   <body>
     <a-scene background="color: #333333">
       <a-box id="myBox"
-        width="3"
+        width="2"
         height="2"
-        depth="1"
-        color="#BBAA33" 
-        shadow>
-      </a-box>
-    </a-scene>
+        depth="2"
+        color="#fa8072" 
+        shadow
+        position="0 3 -3"
+        rotation="70 20 60"
+        scale="2 1 1"
+         >
+     	 </a-box>
+
+     <a-plane id="grond"
+     	color="#A6FA97" 
+     	height="20" 
+     	width="20"
+     	rotation="-90 0 0"
+
+     >
+ 	</a-plane>
+		<a-cone 
+		color="tomato" 
+		radius-bottom="2" 
+		radius-top="0.01"
+		height="3"
+		position="4 3 -4"
+		width="2"
+		>
+			
+		</a-cone>
+
+	<a-cylinder 
+		color="yellow" 
+		theta-start="50" 
+		theta-length="280" 
+		side="double"
+		position="-4 2 -4"
+		rotation="50 50 50"
+		>
+			
+		</a-cylinder>
+   
+	 </a-scene>
   </body>
 </html>
