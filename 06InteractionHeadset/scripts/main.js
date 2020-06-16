@@ -30,9 +30,9 @@ myOtherBox.addEventListener('mouseleave', function(){
 var shrinkspeed = 0.1;
 
  function shrink(){
- 	myOtherBox.object3D.scale.x -= shrinkspeed;
- 	myOtherBox.object3D.scale.y -= shrinkspeed;
- 	myOtherBox.object3D.scale.z -= shrinkspeed;
+ 	myOtherBox.object3D.scale.x *= shrinkspeed;
+ 	myOtherBox.object3D.scale.y *= shrinkspeed;
+ 	myOtherBox.object3D.scale.z *= shrinkspeed;
  	console.log(myOtherBox.object3D.scale);
  }
 
