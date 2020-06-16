@@ -27,16 +27,16 @@ myOtherBox.addEventListener('mouseleave', function(){
  * click-events can use a fuse (default on mobile). So the event only fires, if the cursor is on the object for a specified time. 
  */
 
-var growspeed = 1.2;
+var shrinkspeed = 0.3;
 
- function grow(){
- 	myOtherBox.object3D.scale.x *= growspeed;
- 	myOtherBox.object3D.scale.y *= growspeed;
- 	myOtherBox.object3D.scale.z *= growspeed;
+ function shrink(){
+ 	myOtherBox.object3D.scale.x *= shrinkspeed;
+ 	myOtherBox.object3D.scale.y *= shrinkspeed;
+ 	myOtherBox.object3D.scale.z *= shrinkspeed;
  	console.log(myOtherBox.object3D.scale);
  }
 
  myOtherBox.addEventListener('click', function(){ // uses a fuse
- 	grow();
+ 	shrink();
  	console.log('grew');
  });
